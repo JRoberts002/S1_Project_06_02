@@ -14,22 +14,51 @@
 */
 
 /* Body Header Styles */
-
-
+/*This puts a shadow on the left and right borders.*/
+body {
+    filter: drop-shadow(0 10px 50px rgb(51, 51, 51));
+}
 
 /* Navigation Tabs List Styles */
+/*This puts an image behind the nav.*/
+body>header nav.tabs {
+    background: url(sf_back1.png) center center / cover;
+}
 
+/*This shapes the nav elements to look like trapezoids.*/
+body>header nav.tabs li {
+    transform: perspective(50px) rotateX(20deg);
+}
 
-
+/*It says pseudo-element when it should say pseudo-class.*/
+body>header nav.tabs li:hover {
+    background-color: rgb(231, 231, 231);
+}
 
 /* Left Section Styles */
+/*This adds a border and gives the nav rounded corners.*/
+section#left nav.vertical {
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(20, 167, 170);
+    border-radius: 25px;
+}
 
-
-
+/*Thhis applies the rounded edges to the top of the h1 element.*/
+section#left nav.vertical h1 {
+    border-radius: 25px 25px 0 0;
+}
 
 /* Center Article Styles */
-
-
-
+section#center article {
+    background: radial-gradient(white 30%, rgb(151, 151, 151));
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 50px;
+    box-shadow: rgb(51, 51, 51) 10px 10px 20px;
+}
 
 /* Blockquote Styles */
+blockquote {
+    background: url(sf_speech.png) 100% 100% / cover no-repeat;
+    filter: drop-shadow(5px 5px 10px rgb(51, 51, 51))
+}
