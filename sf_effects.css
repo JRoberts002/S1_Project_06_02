@@ -59,6 +59,10 @@ section#center article {
 
 /* Blockquote Styles */
 blockquote {
-    background: url(sf_speech.png) 100% 100% / cover no-repeat;
+    background: url(sf_speech.png) 100% 100% / 100% 100%;
     filter: drop-shadow(5px 5px 10px rgb(51, 51, 51))
+}
+
+cite img {
+    border-radius: 50%;
 }
